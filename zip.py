@@ -18,5 +18,3 @@ with zipfile.ZipFile(zip_path, 'r') as zip_file:
                 temp_zip.writestr(item, zip_file.read(item.filename))
 
 shutil.move(temp_zip_path, zip_path)
-
-print("File updated successfully!")
